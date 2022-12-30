@@ -125,12 +125,16 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center; }
+  @media screen and (max-width: 1260px) {
+    .pictures {
+      flex-direction: column; } }
   .pictures .pictures-vert {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    justify-content: space-around; }
   .pictures .gallery_image img {
     padding: 5px;
-    max-height: 400px;
+    max-height: 600px;
     max-width: 100%;
     -o-object-fit: scale-down;
        object-fit: scale-down; }
@@ -138,8 +142,10 @@ section {
     padding-bottom: 0px; }
   .pictures .i_do_image img {
     padding: 2px;
+    padding-bottom: 1em;
     height: 150px;
     max-width: 100%;
+    min-width: 270px;
     -o-object-fit: scale-down;
        object-fit: scale-down; }
 
