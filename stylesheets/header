@@ -2,7 +2,7 @@ header .headline {
   text-align: center;
   padding-bottom: 1em;
   padding-top: 1em;
-  font-size: 1.5em; }
+  font-size: 1em; }
 
 header a {
   text-decoration: none; }

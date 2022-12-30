@@ -11,7 +11,7 @@ header .headline {
   text-align: center;
   padding-bottom: 1em;
   padding-top: 1em;
-  font-size: 1.5em; }
+  font-size: 1em; }
 
 header a {
   text-decoration: none; }
@@ -86,6 +86,9 @@ a {
 h1, h2, h3, h4 {
   font-family: 'Alex Brush', cursive; }
 
+h2 {
+  padding-bottom: 0.5em; }
+
 .pre-formatted {
   white-space: pre-wrap; }
 
@@ -110,8 +113,10 @@ section {
     max-width: 60%; }
   section p:last-of-type {
     padding-bottom: 2em; }
-  section li {
-    padding: 0.5em; }
+  section ul {
+    list-style-type: none; }
+    section ul li {
+      padding-bottom: 0.5em; }
   section .hide_link a {
     color: black;
     text-decoration: none; }
@@ -120,9 +125,32 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center; }
+  .pictures .pictures-vert {
+    display: flex;
+    flex-direction: column; }
   .pictures .gallery_image img {
     padding: 5px;
     max-height: 400px;
     max-width: 100%;
     -o-object-fit: scale-down;
        object-fit: scale-down; }
+  .pictures p:last-of-type {
+    padding-bottom: 0px; }
+  .pictures .i_do_image img {
+    padding: 2px;
+    height: 150px;
+    max-width: 100%;
+    -o-object-fit: scale-down;
+       object-fit: scale-down; }
+
+.travel {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: no-wrap; }
+  .travel .travel-section {
+    padding: 2em;
+    min-width: 50%; }
+  @media screen and (max-width: 930px) {
+    .travel {
+      flex-wrap: wrap; } }
